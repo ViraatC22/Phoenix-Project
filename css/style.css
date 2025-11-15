@@ -1,0 +1,299 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#hero h2 {
+    color: #E64A19; /* Phoenix Orange */
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Page Overview Cards */
+#pages-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.page-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-card h3 {
+    color: #E64A19; /* Phoenix Orange */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.page-card p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.page-card .button-green {
+    display: inline-block;
+    background-color: #006633; /* Accent Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.page-card .button-green:hover {
+    background-color: #004d26;
+}
+
+/* Content Section Styling (for other pages) */
+.content-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-section h3 {
+    color: #CC0000; /* Accent Red */
+    margin-bottom: 15px;
+    font-size: 2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.content-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Status Page Specific Styles */
+.status-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.status-item h4 {
+    color: #222222; /* Primary Dark */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.status-item p {
+    margin-bottom: 5px;
+}
+
+.status-item a {
+    color: #006633; /* Accent Green */
+    text-decoration: none;
+}
+
+.status-item a:hover {
+    text-decoration: underline;
+}
+
+.status-indicator {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.status-indicator.warning {
+    background-color: #E64A19; /* Phoenix Orange */
+}
+
+.status-indicator.info {
+    background-color: #4E6A7C; /* Secondary Blue-Grey */
+}
+
+.status-indicator.success {
+    background-color: #006633; /* Accent Green */
+}
+
+.live-weather {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.live-weather-row {
+    display: contents;
+}
+
+.live-weather-main {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    justify-content: start;
+}
+
+.live-weather-location {
+    font-weight: bold;
+}
+
+.live-weather-temp {
+    font-size: 1.6em;
+    color: #E64A19;
+}
+
+.live-weather-desc {
+    color: #555;
+}
+
+.live-weather-extra {
+    display: flex;
+    gap: 12px;
+    justify-self: start;
+}
+
+.live-weather-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.content-image-small {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+.no-alerts {
+    color: #006633; /* Accent Green */
+    font-weight: bold;
+}
+
+.last-updated {
+    font-size: 0.9em;
+    color: #777;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Basic Supplies Page Specific Styles */
+.list-label {
+    font-weight: bold;
+    color: #4E6A7C; /* Secondary Blue-Grey */
+}
+
+/* Home Button Styles */
+.home-button-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #pages-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .page-card {
+        padding: 20px;
+    }
+
+    .page-card h3 {
+        font-size: 1.5em;
+    }
+
+    .content-section h3 {
+        font-size: 1.5em;
+    }
+
+    .status-item h4 {
+        font-size: 1.2em;
+    }
+
+    .content-image-small {
+        max-width: 80%;
+    }
+}

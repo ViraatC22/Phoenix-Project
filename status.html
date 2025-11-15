@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Page - Natural Disasters</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <section id="current-alerts" class="content-section">
+            <h3>Current Alerts & Warnings</h3>
+            <p>Stay informed about active natural disaster alerts and warnings in the Alpharetta area. Your safety is our priority.</p>
+
+            <div class="status-item">
+                <h4>Severe Thunderstorm Watch <span class="status-indicator warning">Active</span></h4>
+                <p><strong>Issued:</strong> October 26, 2023, 2:00 PM EST</p>
+                <p><strong>Expires:</strong> October 26, 2023, 8:00 PM EST</p>
+                <p>A severe thunderstorm watch is in effect for Fulton County, including Alpharetta. Be prepared for the possibility of severe thunderstorms with damaging winds, large hail, and isolated tornadoes. Monitor local weather updates and have a plan to seek shelter if warnings are issued.</p>
+            </div>
+
+            <div class="status-item">
+                <h4>No Flood Warnings <span class="status-indicator success">Inactive</span></h4>
+                <p>Currently, there are no active flood warnings for the Alpharetta area. Continue to exercise caution near waterways during heavy rainfall.</p>
+            </div>
+
+            <p class="no-alerts">No other severe alerts are currently active.</p>
+        </section>
+
+        <section id="school-status" class="content-section">
+            <h3>School Status: FCS Innovation Academy</h3>
+            <p>Updates regarding school operations during inclement weather or natural disaster events.</p>
+
+            <div class="status-item">
+                <h4>School Operations <span class="status-indicator info">Normal</span></h4>
+                <p>FCS Innovation Academy is operating on a normal schedule today, October 26, 2023. All classes and extracurricular activities will proceed as planned.</p>
+                <p>In the event of changes to school operations due to weather or other emergencies, updates will be posted here immediately and communicated via the FCS alert system.</p>
+            </div>
+        </section>
+
+        <section id="local-conditions" class="content-section">
+            <h3>Local Conditions & Resources</h3>
+            <p>Information on local weather, road conditions, and emergency resources.</p>
+
+            <div class="status-item">
+
+                <a class="weatherwidget-io"
+                   href="https://forecast7.com/en/34d08n84d29/alpharetta/?unit=us"
+                   data-label_1="Innovation Academy"
+                   data-label_2=""
+                   data-theme="original">
+                   Innovation Academy Weather
+                </a>
+
+                <script>
+                    !function(d,s,id){
+                        var js,fjs=d.getElementsByTagName(s)[0];
+                        if(!d.getElementById(id)){
+                            js=d.createElement(s);
+                            js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+                            fjs.parentNode.insertBefore(js,fjs);
+                        }
+                    }(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+
+            <div class="status-item">
+                <h4>Road Closures</h4>
+                <p>No significant road closures reported in Alpharetta at this time. Drive with caution during inclement weather.</p>
+            </div>
+
+            <div class="status-item">
+                <h4>Emergency Contacts</h4>
+                <ul>
+                    <li><span class="list-label">Emergency Services (Police, Fire, EMS):</span> 911</li>
+                    <li><span class="list-label">Alpharetta Non-Emergency Police:</span> (678) 297-6300</li>
+                    <li><span class="list-label">Fulton County Emergency Management:</span> <a href="#">Website</a></li>
+                    <li><span class="list-label">Georgia Power Outages:</span> 1-888-891-0938</li>
+                </ul>
+            </div>
+        </section>
+
+        <p class="last-updated">Last Updated: October 26, 2023, 2:30 PM EST</p>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
